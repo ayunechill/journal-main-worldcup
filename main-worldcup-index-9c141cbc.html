@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯预选赛 · 赛事指南与信息索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f7f7f9;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e1e2a;
+            line-height: 1.65;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            letter-spacing: 0.01em;
+        }
+        .page-wrap {
+            max-width: 720px;
+            width: 100%;
+        }
+        /* 极简留白 + 窄版心 */
+        header {
+            margin-bottom: 3.2rem;
+            padding-top: 0.8rem;
+        }
+        .site-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #6f6f7e;
+            margin-bottom: 0.75rem;
+            font-weight: 450;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 550;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            color: #16161f;
+            margin-bottom: 0.35rem;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #4a4a58;
+            border-left: 3px solid #c0c0ce;
+            padding-left: 1rem;
+            margin: 0.75rem 0 0 0;
+            font-weight: 380;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 2.8rem 0 1.2rem 0;
+            color: #20202b;
+            border-bottom: 1px solid #dcdce4;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 480;
+            margin: 1.6rem 0 0.6rem 0;
+            color: #2a2a39;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #2d2d3b;
+        }
+        a {
+            color: #1f3a6b;
+            text-decoration: none;
+            border-bottom: 1px solid #b3c2da;
+            transition: border-color 0.2s, background 0.15s;
+        }
+        a:hover {
+            border-bottom-color: #1f3a6b;
+            background: #edf2fa;
+        }
+        .intro-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 2rem 1.8rem;
+            margin: 2rem 0 2.2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem 1rem;
+            margin: 1.2rem 0 1.8rem;
+        }
+        .highlight-item {
+            flex: 1 1 180px;
+            background: #f5f5f8;
+            border-radius: 24px;
+            padding: 1.2rem 1rem 1rem;
+        }
+        .highlight-item .num {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #2c3e6b;
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+        }
+        .highlight-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #34344a;
+        }
+        .scenario-note {
+            background: #f0f1f6;
+            border-radius: 28px;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0;
+        }
+        .faq-mini {
+            margin: 2.5rem 0;
+        }
+        .faq-q {
+            font-weight: 520;
+            margin: 1.2rem 0 0.2rem;
+            color: #20202b;
+        }
+        .faq-a {
+            margin-left: 0.25rem;
+            color: #3b3b4b;
+        }
+        .cta-line {
+            margin: 2.2rem 0 0.8rem;
+            padding: 1.2rem 0.2rem;
+            border-top: 1px solid #d3d3de;
+        }
+        .small-meta {
+            font-size: 0.8rem;
+            color: #6b6b79;
+            margin-top: 2.8rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #dcdce4;
+            display: inline-block;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #dbdbe4;
+            margin: 2.2rem 0;
+        }
+        @media (max-width: 500px) {
+            body { padding: 1.5rem 1rem; }
+            h1 { font-size: 1.8rem; }
+            .highlight-item { flex: 1 1 140px; }
+            .intro-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <header>
+        <div class="site-label">赛事信息索引</div>
+        <h1>预选赛脉络 · 一站梳理</h1>
+        <div class="subhead">从赛制到日程，从国家队追踪到关键积分</div>
+    </header>
+
+    <!-- 简介卡片：快速识别用途 -->
+    <div class="intro-card">
+        <p style="font-weight:420; font-size:1.05rem; margin-bottom:1rem;">如果你是第一次来到这个网站，最直接的判断依据是：<strong>它围绕世界杯预选赛构建了一个结构化信息库</strong>。不是新闻门户，不是直播平台，而是一份经过整理的赛程、分组、积分与出线逻辑参考。无论你关注亚洲区、南美区还是欧洲区，都可以在这里找到一致的数据框架。</p>
+        <p>许多球迷在搜索“下一轮预选赛时间”或“积分差距”时，往往被碎片信息淹没。<a href="https://main-worldcup.com">世界杯预选赛</a>页面尝试用更干净的方式呈现上述内容——你看到的每一个分区、每一组数据都围绕同一个目的：减少查找成本。</p>
+    </div>
+
+    <!-- 亮点：三个速览模块 -->
+    <h2>三个信息亮点</h2>
+    <div class="highlight-grid">
+        <div class="highlight-item">
+            <span class="num">❶</span>
+            <p><strong>赛程归一</strong><br>所有已公布预选赛窗口按大洲与轮次排列，避免在多个页面间来回跳转。</p>
+        </div>
+        <div class="highlight-item">
+            <span class="num">❷</span>
+            <p><strong>积分结构</strong><br>每组实时排名附带理论出线线参考（非官方预测，仅基于历史均分估算）。</p>
+        </div>
+        <div class="highlight-item">
+            <span class="num">❸</span>
+            <p><strong>跨洲对照</strong><br>附加洲际附加赛名额与对阵逻辑说明，方便理解全球晋级路径。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 / 场景 -->
+    <h2>适合怎样使用</h2>
+    <p>如果你正在追踪某支国家队在各自大洲预选赛中的走势，或者想快速了解某个比赛日之后小组排名变化，这里提供的表格视图比社交媒体滚动更聚焦。建议搭配赛历使用：先在大洲页面上定位下一轮比赛日期，再到对应分组查看对手与积分差。</p>
+    <p>对于深度研究者（比如制作晋级概率模拟），可以依赖本站的基础数据作为起点——但请留意，所有信息均以官方足联公布为最终依据，本站不做实时比分播报，也不提供投注导向内容。</p>
+
+    <div class="scenario-note">
+        <h3 style="margin:0 0 0.5rem 0; border:none; padding:0;">常见使用场景</h3>
+        <p style="margin-bottom:0.4rem;">📋 周中下班后快速浏览各小组胜平负，确认主队是否还保有直接出线主动权。</p>
+        <p style="margin-bottom:0.4rem;">📋 国际比赛日前规划观赛清单：哪些对决决定晋级名额，哪些只剩荣誉之战。</p>
+        <p style="margin-bottom:0;">📋 跨年赛季结束后回顾整届预选赛阶段数据，对比不同大洲的竞争强度。</p>
+    </div>
+
+    <!-- FAQ 摘要 (克制版) -->
+    <div class="faq-mini">
+        <h2>常见疑问摘要</h2>
+        <div class="faq-q">数据更新频率如何？</div>
+        <div class="faq-a">通常在官方赛果发布后 24 小时内完成同步。如遇密集比赛日，会尽量在次日凌晨更新。所有日期基于主办地当地时间。</div>
+
+        <div class="faq-q">包含所有大洲预选赛吗？</div>
+        <div class="faq-a">覆盖 UEFA、CONMEBOL、AFC、CAF、CONCACAF 及大洋洲预选赛。OFC 因轮次较少，信息聚合相对简短，但框架一致。</div>
+
+        <div class="faq-q">为什么没有直播或视频？</div>
+        <div class="faq-a">本站定位为参考工具而非媒体平台，不嵌入直播流或集锦，以保持页面轻量和信息中立。</div>
+    </div>
+
+    <!-- 可信但克制的访问说明 + 自然链接 -->
+    <hr>
+    <p style="font-size:0.95rem; color:#3a3a4a;">如果你希望直接进入数据页面，可以从任意一个赛区入口开始。例如，<a href="https://main-worldcup.com">世界杯预选赛</a>首页集中展示了当前阶段所有大洲的出线名额分配与赛程骨架。页面没有注册门槛，也不收集个人偏好，你可以像翻阅一份静态年鉴那样浏览它。</p>
+    <p style="font-size:0.95rem; color:#3a3a4a;">需要提醒的是：预选赛赛程偶尔因临时调整而变动，请以各大洲足联最终公告为准。本站尽力保持同步，但无法保证分钟级的实时性。</p>
+
+    <div class="cta-line">
+        <span style="background:#e2e5f0; padding: 0.1rem 0.6rem; border-radius: 30px; font-size:0.85rem;">→ 直接前往 <a href="https://main-worldcup.com" style="border-bottom-width:2px; font-weight:450;">世界杯预选赛</a> 页面查看当前分组与赛历。</span>
+    </div>
+
+    <!-- 极简脚注 -->
+    <div class="small-meta">— 信息参考 · 非官方来源 —</div>
+
+</div>
+</body>
+</html>
